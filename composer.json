@@ -1,0 +1,20 @@
+{
+  "name":"krabo/isotope-tag-field-bundle",
+  "description":"Isotope Tag Field.",
+  "type": "contao-bundle",
+  "license":"AGPL-3.0-or-later",
+  "version": "1.0.0",
+  "require": {
+    "contao/core-bundle": "^4.13",
+    "isotope/isotope-core": "^2.8",
+    "codefog/tags-bundle": "*"
+  },
+  "extra": {
+    "contao-manager-plugin": "Krabo\\IsotopeTagFieldBundle\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Krabo\\IsotopeTagFieldBundle\\": "src/"
+    }
+  }
+}
