@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-\Isotope\Model\Attribute::registerModelType('tag', 'Krabo\IsotopeTagFieldBundle\Isotope\Model\Attribute\Tag');
+\Isotope\Model\Attribute::registerModelType('iso_tag', 'Krabo\IsotopeTagFieldBundle\Isotope\Model\Attribute\Tag');
 
 $GLOBALS['TL_HOOKS']['sqlGetFromDca'][] = ['Krabo\IsotopeTagFieldBundle\Callback', 'sqlGetFromDca'];
 
