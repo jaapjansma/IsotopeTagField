@@ -101,9 +101,12 @@ class TagManager implements ManagerInterface, DcaAwareInterface {
         ->execute("SELECT DISTINCT `$strTable`.`$strField` AS options FROM `$strTable`");
       $this->values[$source] = [];
       while ($result->next()) {
-        $this->values[$source] = array_merge($this->values[$source], explode(',', $result->options));
+        if ($result->options) {
+          $this->values[$source] = array_merge($this->values[$source], explode(',', $result->options));
+        }
       }
     }
+    $this->values[$source] = array_unique(array_filter($this->values[$source]));
     return $this->values[$source];
   }
 

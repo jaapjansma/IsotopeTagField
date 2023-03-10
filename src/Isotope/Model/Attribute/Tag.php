@@ -82,7 +82,6 @@ class Tag extends Attribute implements IsotopeAttributeWithOptions {
   {
     $this->multiple = true;
     parent::saveToDCA($arrData);
-
     $arrData['fields'][$this->field_name]['sql'] = 'text NULL';
     $arrData['fields'][$this->field_name]['attributes']['fe_filter'] = true;
     $arrData['fields'][$this->field_name]['eval']['csv'] = ',';

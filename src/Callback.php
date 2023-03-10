@@ -21,7 +21,6 @@ namespace Krabo\IsotopeTagFieldBundle;
 class Callback {
 
   public function sqlGetFromDca($dca) {
-    var_dump($dca);
     $dca['tl_cfg_tag']['TABLE_FIELDS'] = [];
     return $dca;
   }

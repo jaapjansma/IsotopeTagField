@@ -16,4 +16,4 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-$GLOBALS['TL_DCA']['tl_iso_attribute']['palettes']['tag'] = '{attribute_legend},name,field_name,type,legend,customer_defined;{description_legend:hide},description;{config_legend},minlength,maxlength,rgxp,placeholder,rte,mandatory,multilingual;{search_filters_legend},fe_search,fe_sorting,be_search';
+$GLOBALS['TL_DCA']['tl_iso_attribute']['palettes']['iso_tag'] = '{attribute_legend},name,field_name,type,legend;{description_legend:hide},description;{options_legend},includeBlankOption;{config_legend},mandatory,chosen;{search_filters_legend},fe_filter,fe_sorting,be_filter';
