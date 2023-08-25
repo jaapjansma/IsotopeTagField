@@ -102,6 +102,12 @@ class Tag extends Attribute implements IsotopeAttributeWithOptions {
         'label' => $v,
       ];
     }
+    uasort($options, function($value1, $value2) {
+      if (isset($value1['label']) && isset($value2['label'])) {
+        return strcmp($value1['value'], $value2['value']);
+      }
+      return 0;
+    });
     return $options;
   }
 
